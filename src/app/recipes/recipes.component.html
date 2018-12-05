@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-5">
+    <app-recipes-list></app-recipes-list>
+  </div>
+  <div class="col-7">
+    <app-recipes-detail *ngIf="selectedRecipeEl; else infoText" [recipe]="selectedRecipeEl">
+    </app-recipes-detail>
+    <ng-template #infoText>
+      <p>
+        Please Select a Recipe
+      </p>
+    </ng-template>
+  </div>
+</div>
