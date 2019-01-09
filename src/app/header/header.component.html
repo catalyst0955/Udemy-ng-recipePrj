@@ -5,17 +5,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav" style="margin-right: 50vw">
-        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" (click)="onSelect('shoppinglist')">Shopping List</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link"  routerLink="/recipes">Recipes</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link"  routerLink="/shopping-list">Shopping List</a></li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item dropdown" appDropdownDirective>
-          <a class="nav-link dropdown-toggle dropleft" href="#" id="navbarDropdown" role="button" >
+          <a style="cursor: pointer;" class="nav-link dropdown-toggle dropleft" id="navbarDropdown" role="button" >
             Manage
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Save Data</a>
-            <a class="dropdown-item" href="#">Fetch Data</a>
+            <button style="cursor: pointer;" class="dropdown-item" >Save Data</button>
+            <button style="cursor: pointer;" class="dropdown-item" >Fetch Data</button>
           </div>
         </li>
       </ul>
