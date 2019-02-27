@@ -1,4 +1,4 @@
-import {EventEmitter, Injectable} from '@angular/core';
+import { Injectable} from '@angular/core';
 import {Recipe} from '../recipe.modal';
 import {Ingredient} from '../../shared/ingredient.modal';
 import {ShoppingListService} from '../../shopping-list/service/shopping-list.service';
@@ -8,19 +8,19 @@ import {ShoppingListService} from '../../shopping-list/service/shopping-list.ser
 })
 export class RecipeService {
 
-  recipeSelected = new EventEmitter<Recipe>();
+
 
   private recipes: Recipe[] = [
     new Recipe('test Recipe',
-      'Just for tewst',
-      'https://api.norecipes.com/wp-content/uploads/2018/08/teriyaki-chicken-recipe_007.jpg',
+      'Just for test',
+      'https://y1.yooho.com.tw/images/201708/goods_img/2869_G_1502758521597.jpg',
       [
         new Ingredient('Meat', 2),
         new Ingredient('Vegetable', 10)
       ]),
   new Recipe('Another test Recipe',
-  'Just for tewst',
-  'https://api.norecipes.com/wp-content/uploads/2018/08/teriyaki-chicken-recipe_007.jpg',
+  'Just for test',
+  'https://y1.yooho.com.tw/images/201708/goods_img/2869_G_1502758521597.jpg',
   [
     new Ingredient('Chocolate', 5),
     new Ingredient('Cream', 10)
