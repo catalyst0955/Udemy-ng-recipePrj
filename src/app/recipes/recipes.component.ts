@@ -6,7 +6,6 @@ import {Recipe} from './recipe.modal';
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css'],
-  providers: [RecipeService]
 })
 export class RecipesComponent implements OnInit {
 
